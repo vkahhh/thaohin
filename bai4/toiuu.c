@@ -2,7 +2,7 @@
 #include <time.h>
 
 int n = 100000;
-clock_t begin = clock();
+
 int demChuSo(int n) {
 	int count = 0;
 	while(n > 0) {
@@ -38,7 +38,7 @@ float tbc(int n) {
 }
 
 int main() {
-
+clock_t begin = clock();
 	printf("So chu so cua n: %d\n", demChuSo(n));
 	printf("So chu so le cua n: %d\n", demChuSoLe(n));
 	printf("TBC cac chu so cua n: %0.2f", tbc(n));
